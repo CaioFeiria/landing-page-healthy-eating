@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans&family=Playwrite+HR+Lijeva&family=Playwrite+HU&family=Poppins&display=swap');
+
+:root{
+    --color-orange:#FF8000;
+    --color-purple: #4C1F7A;
+    --color-teal: #219B9D;
+    --color-grey: #EEEEEE;
+    --color-black: #1C1C1C;
+    --color-grey: #424242;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo.img > img{
+    width: 97px;
+    height: 86px;
+    padding: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    font-size: 2rem;
+}
+
+nav > .list.nav{
+    display: flex;
+    list-style: none;
+    padding: 12px;
+}
+
+.nav.item{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--color-grey);
+}
+
+.nav.item:hover{
+    color: var(--color-black);
+}
+
+.container{
+    padding: 0 20rem 0 20rem;
+    margin-top: 10px;
+}
+
+.container-bemvindo{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    padding-top: 20vh;
+    align-items: center;
+    font-family: Playwrite HR Lijeva, sans-serif;
+    font-size: 6rem;
+}
+
+.textos-bemvindo{
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+.container-bemvindo > img{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 11vh;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px;
+}
+
+#titulo-receitas{
+    font-size: 5.5rem;
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.relative{
+    position: relative;
+    width: 100%;
+    height: 40rem;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-content-receitas{
+    padding: 15px;
+}
+
+.card-content-receitas h2{
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content-receitas p{
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+p > strong{
+    font-size: 2rem;
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-end-start-radius: 30px;
+    position: absolute;
+    object-fit: cover;
+}
+
+#ingredientes{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+#ingredientes:focus {
+    border-color: #333;
+    background-color: white;
+}
+
+.container-dicas{
+    margin-top: 7em;
+    margin-bottom: 7rem;
+    font-size: 2rem;
+}
+
+#titulo-dicas{
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+.card-dicas{
+    padding: 20px;
+}
+
+.produtos{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#titulo-produtos{
+    font-size: 6rem;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+.container-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-produto{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-produto:hover{
+    transform: translateY(-10px);
+  }
+  
+.card-produto img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 15px;
+}
+
+.card-content h3{
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p{
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.preco{
+    font-size: 1.3em;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-content button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+    background-color: #218838;
+}
+
+.container-quem.somos{
+    margin-top: 7em;
+    font-size: 2rem;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#titulo-quem-somos{
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 17rem;
+}
+  
+.footer-container {
+    margin: 0 auto;
+}
+  
+footer p {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+  
+.footer-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icon {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #28a745;
+}
+
+.footer-links {
+    font-size: 2em;
+}
+
+@media (max-width:1368px) {
+    .container-bemvindo > img{
+        top: 14vh;
+    }
+
+    .relative{
+        width: 200rem;
+    }
+    
+    .card-content-receitas > p{
+        font-size: 13px;
+    }
+
+    .card-content-receitas strong{
+        font-size: 13px;
+    }
+
+    .card-content-receitas > h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1024px) {
+    .textos-bemvindo{
+        font-size: 4rem;
+    }
+
+    .container-bemvindo > img{
+        top: 14vh;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards img{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-end-start-radius: 0;
+    }
+
+    .relative{
+        width: 100%;
+    }
+    
+    .card-content-receitas > p{
+        font-size: 13px;
+    }
+
+    .card-content-receitas strong{
+        font-size: 13px;
+    }
+
+    .card-content-receitas > h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .textos-bemvindo{
+        font-size: 2rem;
+    }
+
+    .container-bemvindo > img{
+        top: 22vh;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards img{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-end-start-radius: 0;
+    }
+
+    .relative{
+        width: 100%;
+    }
+    
+    .card-content-receitas > p{
+        font-size: 13px;
+    }
+
+    .card-content-receitas strong{
+        font-size: 13px;
+    }
+
+    .card-content-receitas > h2{
+        font-size: 23px;
+    }
+}
+
+@media (max-width:480px) {
+    .container{
+        padding: 0 20px 0 20px;
+    }
+    
+    .list.nav{
+        font-size: 10px;
+    }
+
+    .textos-bemvindo{
+        font-size: 2rem;
+    }
+
+    .container-bemvindo > img{
+        top: 14vh;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards img{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-end-start-radius: 0;
+    }
+
+    .relative{
+        width: 100%;
+    }
+    
+    .card-content-receitas > p{
+        font-size: 14px;
+    }
+
+    .card-content-receitas strong{
+        font-size: 14px;
+    }
+
+    .card-content-receitas > h2{
+        font-size: 20px;
+    }
+
+    .container-dicas{
+        font-size: 1.5rem;
+    }
+
+    .card-dicas{
+        font-size: 1.5rem;
+    }
+
+    .container-quem.somos{
+        font-size: 1.5rem;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .footer-links{
+        font-size: 15px;
+    }
+}
